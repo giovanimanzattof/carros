@@ -848,6 +848,23 @@ a {
     
 }
 
+.carros-comb{
+    padding-top: 80px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.carros-comb h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carros-comb p{
+    width: 50%;
+    line-height: 26px;
+    font-size: 1rem;
+}
+
 @media (max-width: 700px){
     header{
         display: none;
