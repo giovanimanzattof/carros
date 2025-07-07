@@ -26,7 +26,8 @@
         </nav>
 
         <div class="modelo">
-            <button><a href="#">Modelos</a></button>
+            <button onclick="abrirModelos()" class="fechar-btn"><a href="#">Modelos</a></button>
+            <i id="pefil" class="ri-user-line"></i>
         </div>
     </header>
 
@@ -356,37 +357,51 @@
         </div>
 
         <div class="contato-container">
-    <div class="overlay">
-      <h5>Formas de Contato</h5>
-      <div class="contato-loc">
-        <div>
-          <p>WhatsApp:</p>
-          <span>(00) 00000-0000</span>
-          <span>Atendimento rápido de segunda a sexta, das 8h às 18h</span>
-        </div>
-        <div>
-          <p>E-mail:</p>
-          <span>Contato@seusite.com.br</span>
-          <span>Respostas em até 24 horas úteis.</span>
-        </div>
-        <div>
-          <p>Endereço:</p>
-          <span>Rua dos superesportivo, 777 - Sua Cidade - SP</span>
-          <span>(Atendimento presencial com agendamento prévio)</span>
-        </div>
-        <button><a href="#">Fale Conosco</a></button>
-      </div>
+            <div class="overlay">
+                <h5>Formas de Contato</h5>
+                <div class="contato-loc">
+                    <div>
+                        <p>WhatsApp:</p>
+                        <span>(00) 00000-0000</span>
+                        <span>Atendimento rápido de segunda a sexta, das 8h às 18h</span>
+                    </div>
+                    <div>
+                        <p>E-mail:</p>
+                        <span>Contato@seusite.com.br</span>
+                        <span>Respostas em até 24 horas úteis.</span>
+                    </div>
+                    <div>
+                        <p>Endereço:</p>
+                        <span>Rua dos superesportivo, 777 - Sua Cidade - SP</span>
+                        <span>(Atendimento presencial com agendamento prévio)</span>
+                    </div>
+                    <button><a href="#">Fale Conosco</a></button>
+                </div>
 
-      <div class="redes">
-        <i class="ri-facebook-circle-fill" title="Facebook"></i>
-        <i class="ri-instagram-fill" title="Instagram"></i>
-        <i class="ri-discord-fill" title="Discord"></i>
-      </div>
-    </div>
-  </div>
-
-
+                <div class="redes">
+                    <i class="ri-facebook-circle-fill" title="Facebook"></i>
+                    <i class="ri-instagram-fill" title="Instagram"></i>
+                    <i class="ri-discord-fill" title="Discord"></i>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <div id="blocoModelos" class="bloco-modelos">
+        <button onclick="fecharModelos()" class="fechar-btn">Voltar<i class="ri-arrow-right-line"></i></button>
+        <h2>Modelos de Carros</h2>
+        <p>Escolha entre superesportivos, híbridos e elétricos.</p>
+    </div>
+
+    <script>
+  function abrirModelos() {
+    document.getElementById('blocoModelos').style.display = 'block';
+  }
+
+  function fecharModelos() {
+    document.getElementById('blocoModelos').style.display = 'none';
+  }
+</script>
 
 
 </body>
