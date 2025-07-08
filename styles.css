@@ -1113,9 +1113,76 @@ details:not([open]) .comb {
 }
 
 
+@media (max-width: 1050px) {
+    summary{
+        margin-bottom: 20px;
+    }
 
-@media (max-width: 950px){
-    .menu{
+
+  .comb .comb-carro {
+    width: 90vw;
+    min-width: unset;
+    max-width: 90vw;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .comb, .comb-eletricos {
+    gap: 40px;
+    padding: 0;
+    margin-left: -40px;
+    margin-right: 5vw;
+  }
+  .comb .comb-carro .observacao {
+    padding: 0 10px 10px 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .comb .comb-carro {
+    width: 90vw;
+    max-width: 90vw;
+    min-width: unset;
+    border-radius: 10px;
+    padding: 10px 15px;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .comb, .comb-eletricos {
+    padding: 0;
+    gap: 40px;
+    margin-left: -40px;
+    margin-right: 5vw;
+  }
+  .comb .comb-carro img {
+    width: 70vw;
+    max-width: 70vw;
+    
+    height: auto;
+    margin: 10px auto 16px auto;
+    border-radius: 10px;
+    display: block;
+  }
+  .comb .comb-carro .observacao h3 {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+  }
+  .comb .comb-carro .observacao p {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+  .observacao button {
+    font-size: 1rem;
+    margin-left: 125px;
+    margin-top: 10px;
+  }
+
+  .menu{
         display: none;
     }
 
@@ -1160,80 +1227,5 @@ details:not([open]) .comb {
     .Depoimentos .depoiments{
         padding: 10px;
     }
-
-  
-
-
-
-}
-
-@media (max-width: 1050px) {
-    summary{
-        margin-bottom: 20px;
-    }
-
-
-  .comb .comb-carro {
-    width: 90vw;
-    min-width: unset;
-    max-width: 90vw;
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 0;
-    gap: 10px;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  .comb {
-    gap: 40px;
-    padding: 0;
-    margin-left: -40px;
-    margin-right: 5vw;
-  }
-  .comb .comb-carro .observacao {
-    padding: 0 10px 10px 10px;
-  }
-}
-
-@media (max-width: 600px) {
-  .comb .comb-carro {
-    width: 90vw;
-    max-width: 90vw;
-    min-width: unset;
-    border-radius: 10px;
-    padding: 10px 15px;
-    gap: 10px;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  .comb {
-    padding: 0;
-    gap: 40px;
-    margin-left: -40px;
-    margin-right: 5vw;
-  }
-  .comb .comb-carro img {
-    width: 70vw;
-    max-width: 70vw;
-    
-    height: auto;
-    margin: 10px auto 16px auto;
-    border-radius: 10px;
-    display: block;
-  }
-  .comb .comb-carro .observacao h3 {
-    font-size: 1.3rem;
-    padding-bottom: 10px;
-  }
-  .comb .comb-carro .observacao p {
-    font-size: 0.95rem;
-    line-height: 1.3rem;
-  }
-  .observacao button {
-    font-size: 1rem;
-    margin-left: 125px;
-    margin-top: 10px;
-  }
 }
 
