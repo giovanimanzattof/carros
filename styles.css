@@ -1119,7 +1119,7 @@ details:not([open]) .comb {
     }
 
 
-  .comb .comb-carro {
+  .comb  .comb-carro {
     width: 90vw;
     min-width: unset;
     max-width: 90vw;
@@ -1131,13 +1131,35 @@ details:not([open]) .comb {
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .comb, .comb-eletricos {
+  .comb {
     gap: 40px;
     padding: 0;
     margin-left: -40px;
     margin-right: 5vw;
   }
-  .comb .comb-carro .observacao {
+  .comb  .comb-carro .observacao {
+    padding: 0 10px 10px 10px;
+  }
+
+  .comb-eletricos  .comb-carro {
+    width: 90vw;
+    min-width: unset;
+    max-width: 90vw;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .comb-eletricos {
+    gap: 40px;
+    padding: 0;
+    margin-left: -40px;
+    margin-right: 5vw;
+  }
+  .comb-eletricos  .comb-carro .observacao {
     padding: 0 10px 10px 10px;
   }
 }
@@ -1153,7 +1175,7 @@ details:not([open]) .comb {
     margin-left: 5vw;
     margin-right: 5vw;
   }
-  .comb, .comb-eletricos {
+  .comb  {
     padding: 0;
     gap: 40px;
     margin-left: -40px;
@@ -1173,6 +1195,40 @@ details:not([open]) .comb {
     padding-bottom: 10px;
   }
   .comb .comb-carro .observacao p {
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+  }
+
+  .comb-eletricos .comb-carro {
+    width: 90vw;
+    max-width: 90vw;
+    min-width: unset;
+    border-radius: 10px;
+    padding: 10px 15px;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .comb-eletricos  {
+    padding: 0;
+    gap: 40px;
+    margin-left: -40px;
+    margin-right: 5vw;
+  }
+  .comb-eletricos .comb-carro img {
+    width: 70vw;
+    max-width: 70vw;
+    
+    height: auto;
+    margin: 10px auto 16px auto;
+    border-radius: 10px;
+    display: block;
+  }
+  .comb-eletricos .comb-carro .observacao h3 {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+  }
+  .comb-eletricos .comb-carro .observacao p {
     font-size: 0.95rem;
     line-height: 1.3rem;
   }
