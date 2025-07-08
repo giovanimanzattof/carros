@@ -953,7 +953,7 @@ details:not([open]) .comb {
     padding-bottom: 20px;
 }
 
-/* From Uiverse.io by adamgiebl */ 
+
 .observacao button {
   font-family: inherit;
   font-size: 20px;
@@ -1009,6 +1009,107 @@ details:not([open]) .comb {
   to {
     transform: translateY(-0.1em);
   }
+}
+
+
+.comb-eletricos{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    opacity: 0;
+    animation: fadein 1.6s ease forwards;
+    flex-wrap: wrap;
+    
+    
+}
+
+details:not([open]) .comb {
+    opacity: 0;
+    animation: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
+
+.comb-eletricos .comb-carro{
+    background-color: #000000;
+    border-radius: 20px;
+    width: 950px;
+    height: 350px;
+    border: 1px solid white;
+    text-align: left;
+    line-height: 25px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  
+}
+
+
+
+.comb-eletrico .comb-carro{
+    background-color: #000000;
+    border-radius: 20px;
+    width: 950px;
+    height: 350px;
+    border: 1px solid white;
+    text-align: left;
+    line-height: 25px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    
+    
+    
+}
+
+.comb-eletricos .comb-carro img{
+     width: 50%;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px;
+    border: 1px solid white;
+  
+}
+
+.comb-eletricos .comb-carro .observacao{
+    line-height: 26px;
+}
+
+.comb-eletricos .comb-carro .observacao h3{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+
+.carros-comb-eletrico{
+    padding-top: 80px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.carros-comb-eletrico h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carros-comb-eletrico p{
+    width: 50%;
+    line-height: 26px;
+    font-size: 1rem;
 }
 
 
