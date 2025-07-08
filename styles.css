@@ -987,11 +987,11 @@ details:not([open]) .comb {
 }
 
 .observacao button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  transform: translateX(2.8em) rotate(45deg) scale(1.1);
 }
 
 .observacao button:hover span {
-  transform: translateX(5em);
+  transform: translateX(7em);
 }
 
 .observacao button:active {
