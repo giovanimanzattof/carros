@@ -95,14 +95,14 @@ header {
 }
 
 section.home {
-    padding: 120px 20px 80px;
+    padding: 100px 20px 80px;
     text-align: center;
     background: url('imagens/home.png') no-repeat center center / cover fixed;
 
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
@@ -111,10 +111,11 @@ h1 {
 
 
 
+
 .intro {
     max-width: 800px;
     margin: 0 auto 40px;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1vw, 3.5rem);
     padding: 0 15px;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
     color: white;
